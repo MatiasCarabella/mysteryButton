@@ -1,0 +1,529 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?r77o0');
+  src:  url('../fonts/icomoon.eot?r77o0#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?r77o0') format('truetype'),
+    url('../fonts/icomoon.woff?r77o0') format('woff'),
+    url('../fonts/icomoon.svg?r77o0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+  content: "\f002";
+}
+.icon-user:before {
+  content: "\f007";
+}
+.icon-bar-chart:before {
+  content: "\f080";
+}
+.icon-certificate:before {
+  content: "\f0a3";
+}
+.icon-usergroup:before {
+  content: "\f0c0";
+}
+.icon-list:before {
+  content: "\f0cb";
+}
+.icon-magic:before {
+  content: "\f0d0";
+}
+.icon-shield:before {
+  content: "\f132";
+}
+.icon-moon:before {
+  content: "\f186";
+}
+.icon-dot-circle:before {
+  content: "\f192";
+}
+.icon-line-chart:before {
+  content: "\f201";
+}
+.icon-question-circle:before {
+  content: "\f29c";
+}
+.icon-enter:before {
+  content: "\ea13";
+}
+
+/* BODY */
+
+body{
+  padding-top: 48px;
+  background-color: #2E2F30;
+}
+
+/* NAVBAR */
+
+.navbar {
+  min-height: 48px;
+  height: 48px;
+  display: flex;
+  min-width: 360px;
+}
+
+.navbar-brand {
+ padding: 0 3px;
+  height: 48px;
+  line-height:48px;
+}
+
+.logo_small{
+  display: none;
+}
+
+.navbar .btn-secondary{
+	color: black;
+	background-color: white;
+	border-color: transparent;
+	margin-top: -20px;
+	border-width: 0.5px;
+}
+
+.navbar .btn-secondary:hover{
+	border-color: lightgrey;
+}
+
+.navbar .dropButton1{
+	width: 270px;
+}
+
+.dropdown-menu{
+  padding-top: 8px;
+}
+
+.dropdown-toggle:after{
+	float:right;
+	margin-top: 10px;
+}
+
+.form-inline{
+	margin-top: -15px;
+}
+
+.form-control{
+	background-color: #F6F7F8;
+	transition: none;
+}
+
+.drop1 .form-group{
+	padding: 0 20px;
+  margin-bottom: 8px;
+}
+
+.dropdown span{
+	padding-right: 8px;
+}
+
+.wText{
+  display: initial;
+}
+
+.noText{
+  display: none;
+}
+
+.drop1 .icon-bar-chart:before, .dropdown .icon-line-chart:before, .dropdown .icon-list:before{
+  color: #0079D3;
+}
+
+.drop1 .icon-dot-circle:before{
+  color: #DDBD37;
+}
+
+.drop1 .icon-shield:before{
+  color: #FF4500;
+}
+
+.searchBar{
+  position: relative;
+  min-width: 96px;
+	flex: 1;
+}
+
+.searchBar span{
+  font-size: 1.1em;
+  position: absolute;
+  left: 20px;
+}
+
+.searchBar .icon-search:before{
+  color: #878A8C;
+}
+
+.searchBar input{
+  padding-left: 45px;
+}
+
+.searchBar .form-control{
+	width: 100%;
+}
+
+.nav-item.nav-link{
+  color: #1A1A1B;
+  font-size: 0.9em;
+  margin-top: -15px;
+  width: 32px;
+  height: 32px;
+  border-radius: 3px;
+}
+
+.nav-link .icon-magic:before, .nav-link .icon-line-chart:before, .nav-link .icon-bar-chart:before{
+  color: #1A1A1B;
+  margin-left: -7px;
+}
+
+.nav-item.nav-link:hover{
+  background-color: #E8E8E8;
+}
+
+.signInUp .btn{
+	margin: 0 10px;
+  width: 120px;
+}
+
+.signInUp .btn.btn-outline-primary{
+  color: #0079D3;
+  border-color: #0079D3;
+  transition: none;
+}
+
+.signInUp .btn.btn-outline-primary:hover{
+  background-color: transparent;
+  border-color: #3293DB;
+}
+
+.signInUp .btn.btn-outline-primary:focus{
+  color: #0060A8;
+  background-color: transparent;
+  border-color: #0060A8;
+}
+
+.signInUp .btn.btn-primary{
+  background-color: #0079D3;
+  border: transparent;
+  transition: none;
+}
+
+.signInUp .btn.btn-primary:hover{
+  background-color: #7fbce9;
+}
+
+.signInUp .btn.btn-primary:focus{
+  background-color: #0060A8;
+}
+
+.form-control:hover{
+	background-color: white;
+	 border-color: #0079D3;
+}
+
+.form-control:focus {
+  border-color: #0079D3;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn-primary.focus, .btn-primary:focus, .btn-outline-primary.focus, .btn-outline-primary:focus {
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+
+.btn-secondary:focus, .btn-secondary.focus {
+	box-shadow: none;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
+    color: black;
+    background-color: white;
+    border-color: lightgrey;
+}
+
+.dropButton2{
+  height: 32px;
+}
+
+.drop2 .icon-user:before{
+  color: #878A8C;
+  font-size: 1.3em;
+}
+
+.drop2 .form-group{
+  padding: 0 10px;
+  margin-bottom: 8px;
+}
+
+.drop2 a{
+  padding: 4px 10px;
+}
+
+.drop2 h6{
+  padding: 8px 10px;
+}
+
+/* B I G BUTTON */
+
+/* Prevent scrollbars to appear when waves go out of bound */
+.sonar-wrapper {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  padding: 8rem 0;
+}
+
+/* The circle */
+.sonar-emitter {
+  position: relative;
+  margin: 0 auto;
+  width: 350px;
+  height: 350px;
+  border-radius: 9999px;
+  background-color: #FF4500;
+  cursor: pointer;
+}
+
+/* the 'wave', same shape and size as its parent */
+.sonar-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 9999px;
+  background-color: #FF4500;
+  opacity: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/*
+  Animate!
+  NOTE: add browser prefixes where needed.
+*/
+.sonar-wave {
+  animation: sonarWave 1s linear infinite;
+}
+
+@keyframes sonarWave {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.paused {
+    -webkit-animation-play-state: paused !important;
+    -moz-animation-play-state: paused !important;
+    -o-animation-play-state: paused !important; 
+    animation-play-state: paused !important;
+}
+
+/* TIMER */
+
+.timer, .msgUser{
+  color: white;
+  text-align: center;
+}
+
+.timer{
+  font-size: 5em;
+  margin-top: -50px;
+}
+
+.msgUser{
+  font-size: 3em;
+  margin-top: 50px;
+}
+
+.randUser{
+  position: absolute;
+  color: white;
+  top: 350px;
+  left: 50px;
+  width: 90%;
+  display: none;
+}
+
+.statsContainer{
+  position: absolute;
+  right: 100px;
+  top: 300px;
+/*  background-color: white;*/
+  height: 200px;
+  width: 500px;
+  display: none;
+}
+
+.barContainer{
+ /* position: relative;*/
+/*  background-color: darkGrey;*/
+  top: 0;
+  height: 170px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  text-align: center;
+}
+
+.barContainer span{
+  color: white;
+  font-size: 1.5em;
+  display: block;
+  margin-top: -35px;
+}
+
+.labelContainer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-right: 5px;
+}
+
+.labelContainer h5{
+  color: white;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.stats{
+  color: white;
+  position: absolute;
+  bottom: 0;
+}
+
+.purpleBar, .blueBar, .greenBar, .yellowBar, .orangeBar, .redBar, .greyBar{
+  width: 40px;
+}
+
+.purpleBar{
+  background-color: purple;
+}
+
+h5.purpleLabel{
+}
+
+.blueBar{
+  background-color: blue;
+}
+
+h5.blueLabel{
+}
+
+.greenBar{
+  background-color: green;
+}
+
+h5.greenLabel{
+}
+
+.yellowBar{
+  background-color: yellow;
+}
+
+h5.yellowLabel{
+}
+
+.orangeBar{
+  background-color: orange;
+}
+
+h5.orangeLabel{
+}
+
+.redBar{
+  background-color: red;
+}
+
+.greyBar{
+  background-color: grey;
+}
+
+@media only screen and (max-width: 1650px) {
+   .statsContainer{
+   left: 0; 
+   right: 0; 
+   margin-left: auto; 
+   margin-right: auto; 
+    top: 1000px;
+    margin-bottom: 10px;
+  }
+
+  .randUser{
+    left: 0; 
+   right: 0; 
+   margin-left: auto; 
+   margin-right: auto; 
+    top: 900px;
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+   .signInUp .btn{
+    margin: 0 5px;
+    width: 86px;
+  }
+}
+
+@media only screen and (max-width: 1010px){
+  .logo_big{
+    display: none;
+  }
+
+  .logo_small{
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 920px){
+  .wText{
+    display: none;
+  }
+
+  .navbar .dropButton1{
+    width: 80px;
+  }
+  .noText{
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 790px){
+  a.nav-item.nav-link{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 614px){
+  .signInUp .btn{
+    display: none;
+  }
+}

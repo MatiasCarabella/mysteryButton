@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel=icon href="favicon/favicon.ico">
+
+    <title>Reddit Button</title>
+  </head>
+  <body>
+  	<nav class="navbar fixed-top navbar-light bg-white">
+
+	  <a class="navbar-brand logo_big" href="https://www.reddit.com/">
+	    <img src="svg/reddit_logo.svg" width="100" class="d-inline-block align-top" id="logo_big">
+	  </a>
+	  <a class="navbar-brand logo_small" href="https://www.reddit.com/">
+	    <img src="svg/reddit_logo_small.svg" width="33" class="d-inline-block align-top" id="logo_big">
+	  </a>
+	   <div class="dropdown drop1">
+		  <button class="btn btn-secondary dropdown-toggle dropButton1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    	<span style="float: left;" class="wText"><span class="icon-line-chart"></span>Popular</span>
+		    	<span style="float: left;" class="noText"><span class="icon-line-chart"></span></span>
+		  </button>
+
+		  <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+		  	 <div class="form-group">
+	      <input type="text" class="form-control" id="filterForm" placeholder="Filter">
+	    </div>
+	     <h6 class="dropdown-header">REDDIT FEEDS</h6>
+		    <a class="dropdown-item" href="https://www.reddit.com/r/popular/"><span class="icon-line-chart"></span>Popular</a>
+		    <a class="dropdown-item" href="https://www.reddit.com/r/all/"><span class="icon-bar-chart"></span>All</a>
+		     <a class="dropdown-item" href="https://www.reddit.com/subreddits/leaderboard/"><span class="icon-list"></span>Top Communities</a>
+		     <h6 class="dropdown-header">OTHER</h6>
+		    <a class="dropdown-item" href="https://www.reddit.com/coins"><span class="icon-dot-circle"></span>Coins</a>
+		    <a class="dropdown-item" href="https://www.reddit.com/premium"><span class="icon-shield"></span>Premium</a>
+		  </div>
+		</div>
+		   <form class="form-inline searchBar">
+		   	<span class="icon-search"></span>
+	    	<input class="form-control mr-sm-2" id="searchBar" type="search" placeholder="Search Reddit" aria-label="Search" onkeypress="return search(this);">
+	  	</form>
+     	 <a class="nav-item nav-link" href="https://www.reddit.com/r/popular/"><span class="icon-line-chart"></span></a>
+     	 <a class="nav-item nav-link" href="https://www.reddit.com/r/all/"><span class="icon-bar-chart"></span></a>
+     	 <a class="nav-item nav-link" href="https://www.reddit.com/rpan/"><span class="icon-magic"></span></a>
+	  	<form class="form-inline signInUp">
+		   <button type="button" class="btn btn-outline-primary" onclick="document.location.href='https://www.reddit.com/login/';">LOG IN</button>
+		   <button type="button" class="btn btn-primary" onclick="document.location.href='https://www.reddit.com/register/';">SIGN UP</button>
+		</form>
+		<div class="dropdown drop2">
+		  <button class="btn btn-secondary dropdown-toggle dropButton2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    	<span style="float: left;"><span class="icon-user"></span></span>
+		  </button>
+
+		  <div class="dropdown-menu dropdown-menu-right w-100" aria-labelledby="dropdownMenuButton">
+		  	 <div class="form-group">
+	      <input type="text" class="form-control" id="filterForm" placeholder="Filter">
+	    </div>
+	     <h6 class="dropdown-header">VIEW OPTIONS</h6>
+		    <a class="dropdown-item" href="#"><span class="icon-moon" onclick="soon();"></span>Night Mode</a>
+		     <h6 class="dropdown-header">MORE STUFF</h6>
+		    <a class="dropdown-item" href="https://www.reddit.com/coins"><span class="icon-dot-circle"></span>Reddit Coins</a>
+		    <a class="dropdown-item" href="https://www.reddit.com/premium"><span class="icon-shield"></span>Reddit Premium</a>
+		    <a class="dropdown-item" href="https://www.reddithelp.com/en"><span class="icon-question-circle"></span>Help Center</a>
+		     <div class="dropdown-divider"></div>
+		     <a class="dropdown-item" href="https://www.reddit.com/login/"><span class="icon-enter"></span>Log In / Sign Up</a>
+		  </div>
+		</div>
+	</nav>
+
+	<h3 class="randUser" id="randUser"></h3>
+	<div class="statsContainer" id="statsContainer">
+		<div class="barContainer">
+			<div class="purpleBar" id="purpleBar"><span id="purpleCounter"></span></div>
+			<div class="blueBar" id="blueBar"><span id="blueCounter"></span></div>
+			<div class="greenBar" id="greenBar"><span id="greenCounter"></span></div>
+			<div class="yellowBar" id="yellowBar"><span id="yellowCounter"></span></div>
+			<div class="orangeBar" id="orangeBar"><span id="orangeCounter"></span></div>
+			<div class="redBar" id="redBar"><span id="redCounter"></span></div>
+			<div class="greyBar" id="greyBar"><span id="greyCounter"></span></div>
+		</div>
+		<div class="labelContainer">
+			<h5 class="purpleLabel" id="purpleLabel"></h5>
+			<h5 class="blueLabel" id="blueLabel"></h5>
+			<h5 class="greenLabel" id="greenLabel"></h5>
+			<h5 class="yellowLabel" id="yellowLabel"></h5>
+			<h5 class="orangeLabel" id="orangeLabel"></h5>
+			<h5 class="redLabel" id="redLabel"></h5>
+			<h5 class="greyLabel" id="greyLabel"></h5>
+		</div>
+	</div>
+	
+	<div class="sonar-wrapper">
+		<div class="sonar-emitter" id="sonar-emitter" onclick="reset();">
+	    <div class="sonar-wave" id="sonar-wave"></div>
+	  </div>
+	</div>
+	<h1 class="timer" id="timer"></h1>
+	<h2 class="msgUser" id="msgUser"></h2>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/soon.js"></script>
+    <script src="js/timer.js"></script>
+
+  </body>
+</html>

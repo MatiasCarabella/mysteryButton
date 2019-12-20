@@ -1,3 +1,0 @@
-function soon(){
-	alert("Proximamente");
-}

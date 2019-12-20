@@ -366,7 +366,6 @@ body{
   color: white;
   top: 350px;
   left: 50px;
-  width: 90%;
   display: none;
 }
 
@@ -479,9 +478,10 @@ h5.orangeLabel{
 
   .randUser{
     left: 0; 
-   right: 0; 
-   margin-left: auto; 
-   margin-right: auto; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center;
     top: 900px;
   }
 }

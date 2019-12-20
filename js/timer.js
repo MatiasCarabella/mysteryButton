@@ -13,20 +13,7 @@
 
     function timer() {
         if (count <= 0) {
-            clearInterval(counter);
-            document.getElementById("sonar-emitter").style.cursor = "default";
-            document.getElementById("sonar-emitter").style.backgroundColor = "grey";
-            document.getElementById("sonar-wave").style.backgroundColor = "grey";
-            document.getElementById("sonar-emitter").onclick = "";
-            if(firstClick){
-                document.getElementById("msgUser").innerHTML = "You've joined team <span style='color: grey;'>grey</span>!";    
-                greyTeam++;
-                totalClicks++;
-                updateStats();
-            }
-            firstClick = false;
-            setTimeout(reset, 1000 + Math.random() * 10000);
-            return;
+            reset();
         }
         count--;
         displayCount(count);

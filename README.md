@@ -6,7 +6,9 @@ My first job ended up being more back-end oriented, which became my main focus l
 ### Problem
 The date is March 20, 2015, you're a Reddit employee and you come up with an 'April Fools' prank: To create a section of the page containing a large button and a counter indicating a descending amount of seconds.
 
-The counter descends from 60 seconds to 0 and only resets if someone with the page open presses the button. It can only be pressed once per user and when a user presses it a color is assigned as a reminder.
+The counter descends from 60 seconds to 0 and only resets if someone with the page open presses the button. It can only be pressed once per user and, when a user presses it, a color is assigned as a reminder based on the following table:
+
+<p align="center"><img src="https://i.imgur.com/iYwB8NG.png"></p>
 
 ### Requirement
 A single page application that implements the button idea considering the following aspects:

@@ -1,4 +1,4 @@
-This project was one of the first challenges I faced in the professional world. It was part of an interview process for a company that I applied to back in 2019. The goal was to create a 'Reddit clone' with an imaginary feature for April Fools. I learned a lot from this experience and I’m proud of the result given my knowledge at the time. 
+This project was one of the first challenges I faced in the professional world. It was part of an interview process for a company that I applied to back in 2019. The goal was to create a 'Reddit clone' with an imaginary feature for April Fools. I learned a lot from this experience and I’m quite proud of the result given my knowledge at the time. 
 My first job ended up being more back-end oriented, which became my main focus later on. 😊
 
 ---
